@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome To My App"
+        android:layout_marginTop="34dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/gambarjudul"
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/judul"
+        android:src="@drawable/gambar2"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/inputnama"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/transparan"
+        android:layout_below="@+id/gambarjudul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_marginBottom="12dp"
+        android:hint="Enter Your Name"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputnama"
+        android:text="Submit"
+        android:layout_marginStart="34dp"
+        android:background="@drawable/button_background"
+        app:backgroundTint="@null"
+
+        />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputnama"
+        android:layout_toRightOf="@id/submit"
+        android:layout_marginEnd="34dp"
+        android:text="Cancel"
+        android:background="@drawable/button_background"
+        app:backgroundTint="@null"
+        />
+
+
+
+</RelativeLayout>
+
